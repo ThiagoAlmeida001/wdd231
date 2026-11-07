@@ -1,0 +1,21 @@
+{
+    
+    "familyname": "Almeida",
+    "moved date": "04/11/2026",
+    "number of people family": 2,
+    "visited by the bishopric?": true,
+    "individual family data":[
+        {
+            "name": "Belen Miranda",
+            "gender": "Female",
+            "birthdate": "1999-09-09"
+        },
+        {
+            "name":"Thiago Almeida",
+            "gender": "male",
+            "birthdate":"1999-10-14"
+        }
+    ]
+
+
+}

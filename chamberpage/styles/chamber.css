@@ -1,0 +1,268 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #f1c40f;
+    --bg-color: #ffffff;
+    --body-bg: #f4f6f9;
+    --text-color: #333333;
+    --completed-color: #d4edda;
+    --completed-text: #155724;
+    --completed-border: #c3e6cb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--bg-color);
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #ddd; 
+}
+
+.logo-title-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+}
+
+.logo-title-group div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+header img {
+    width: 50px; 
+    height: auto;
+}
+
+header span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#menu-toggle {
+    background: #e0e0e0; 
+    border: 1px solid #b8b8b8;
+    font-size: 1.5rem;
+    padding: 5px 12px;
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.navigation {
+    display: none; 
+    list-style: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--primary-color); 
+    margin-top: 0.5rem;
+}
+
+.navigation.open {
+    display: flex; 
+}
+
+.navigation li {
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-color); 
+}
+
+
+.navigation a {
+    display: block;
+    color: #ffffff; 
+    padding: 14px;
+    text-decoration: none;
+    text-align: left; 
+    font-size: 1.05rem;
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.directory-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.directory-menu button {
+    background-color: #ffffff;
+    border: 1px solid var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.directory-menu button.active, 
+.directory-menu button:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.grid-layout .member-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-layout .member-card img {
+    max-height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.list-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-layout .member-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 4px;
+}
+
+.list-layout .member-card img {
+    display: none;
+}
+
+.member-card h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.member-card p {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.member-card .web-link {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.member-card .web-link:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.badge.gold {
+    background-color: #fef9e7;
+    color: #b7950b;
+    border: 1px solid var(--accent-color);
+}
+
+.badge.silver {
+    background-color: #f2f4f4;
+    color: #7f8c8d;
+    border: 1px solid #bdc3c7;
+}
+
+.badge.member {
+    background-color: #eaf2f8;
+    color: #2980b9;
+    border: 1px solid #a9cce3;
+}
+
+footer {
+    background-color: #1a252f;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.social-links img {
+    width: 32px;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+footer p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+#lastModified {
+    color: var(--accent-color); 
+    font-size: 0.85rem;
+}

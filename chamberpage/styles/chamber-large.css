@@ -1,0 +1,60 @@
+@media (min-width: 768px) {
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    header img {
+        width: 120px;
+        height: auto;
+        transition: width 0.3s ease;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        gap: 1.5rem;
+    }
+
+    .navigation a {
+        color: var(--primary-color);
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+
+    .navigation a:hover {
+        background-color: var(--primary-color);
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .list-layout .member-card {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .list-layout .member-card h3 {
+        flex: 1;
+        min-width: 150px;
+    }
+    
+    .list-layout .member-card p,
+    .list-layout .member-card a {
+        flex: 1;
+    }
+
+}

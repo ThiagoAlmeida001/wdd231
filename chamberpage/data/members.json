@@ -1,0 +1,100 @@
+[
+    
+        {            
+            "NAME": "MercadoLibre Chile",
+            "ADDRESS": "Av. Andrés Bello 2425, piso 36, comuna de Providencia, Santiago de Chile.",
+            "PHONE": "+56 9 0000-0000",
+            "WEBSITE": "www.mercadolibre.cl",
+            "EMAIL": "www.mercadolibre.cl",
+            "IMAGE": "logoml",
+            "MEMBERSHIP_LEVEL": 3
+        },
+
+    
+        {            
+            "NAME": "SP Digital",
+            "ADDRESS": "Padre Mariano 356, 7500026 Providencia, Región Metropolitana",
+            "PHONE": "+56 (2) 2656-7043",
+            "WEBSITE": "www.spdigital.cl/",
+            "EMAIL": "personas@spdigital.cl",
+            "IMAGE": "logosp",
+            "MEMBERSHIP_LEVEL": 3
+        },
+
+    
+        {            
+            "NAME": "Myshop",
+            "ADDRESS": "General del Canto 135, Providencia, Santiago",
+            "PHONE": "+56 9 6656-7202",
+            "WEBSITE": "myshop.cl",
+            "EMAIL": "ventas@myshop.cl",
+            "IMAGE": "logoms",
+            "MEMBERSHIP_LEVEL": 2
+        },
+
+    
+        {            
+            "NAME": "Tecnomas",
+            "ADDRESS": "www.tecnomas.cl",
+            "PHONE": "+56 9 7983-3989",
+            "WEBSITE": "www.tecnomas.cl",
+            "EMAIL": "contacto@tecnomas.cl",
+            "IMAGE": "logotm",
+            "MEMBERSHIP_LEVEL": 1
+        },
+
+    
+        {            
+            "NAME": "Pc-Express",
+            "ADDRESS": "Almirante Zegers 784. Providencia.",
+            "PHONE": "+56 (2) 2235-3028",
+            "WEBSITE": "tienda.pc-express.cl",
+            "EMAIL": "equipo.ventas@pc-express.cl",
+            "IMAGE": "logope",
+            "MEMBERSHIP_LEVEL": 1
+        },
+
+    
+        {            
+            "NAME": "Nice One",
+            "ADDRESS": "General Salvo 297,Providencia, Santiago",
+            "PHONE": "+56 9 8888-8888",
+            "WEBSITE": "n1g.cl",
+            "EMAIL": "ventas@n1g.cl",
+            "IMAGE": "logono",
+            "MEMBERSHIP_LEVEL": 3
+        },
+
+    
+        {            
+            "NAME": "Pc Factory",
+            "ADDRESS": "Avenida Las Condes 12340",
+            "PHONE": "+56 (2) 2560-0040",
+            "WEBSITE": "www.pcfactory.cl",
+            "EMAIL": "www.pcfactory.cl",
+            "IMAGE": "logopf",
+            "MEMBERSHIP_LEVEL": 3
+        },
+
+    
+        {            
+            "NAME": "Computacion Wei",
+            "ADDRESS": "Marchant Pereira 150, Providencia Santiago",
+            "PHONE": "+56 (2) 2379-0000",
+            "WEBSITE": "www.wei.cl",
+            "EMAIL": "ventas@wei.cl",
+            "IMAGE": "logowi",
+            "MEMBERSHIP_LEVEL": 1
+        },
+
+    
+        {            
+            "NAME": "Tech Center",
+            "ADDRESS": "San Diego 335, Santiago, Región Metropolitana.",
+            "PHONE": "+56 9 7779-8385",
+            "WEBSITE": "www.techcenter.cl",
+            "EMAIL": "contacto@techcenter.cl",
+            "IMAGE": "logotc",
+            "MEMBERSHIP_LEVEL": 1
+        }
+]
