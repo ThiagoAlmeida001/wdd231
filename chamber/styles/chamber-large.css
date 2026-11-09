@@ -41,6 +41,13 @@
         text-decoration: none;
     }
 
+    .navigation a.active {
+        background-color: var(--primary-color);
+        color: #ffffff !important;
+        border-bottom: 3px solid var(--accent-color);
+        border-radius: 4px 4px 0 0;
+    }
+
     .list-layout .member-card {
         flex-direction: row;
         justify-content: space-between;

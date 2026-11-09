@@ -95,6 +95,12 @@ header span {
     background-color: var(--secondary-color);
 }
 
+.navigation a.active {
+    background-color: var(--secondary-color);
+    color: var(--accent-color) !important;
+    font-weight: bold;
+}
+
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -175,7 +181,7 @@ main {
     display: none;
 }
 
-.member-card h3 {
+.member-card h2 {
     color: var(--primary-color);
     font-size: 1.2rem;
 }
@@ -198,7 +204,7 @@ main {
 
 .badge {
     display: inline-block;
-    padding: 4px 10px;
+    padding: 6px 12px;
     font-size: 0.75rem;
     font-weight: bold;
     border-radius: 20px;
@@ -207,21 +213,21 @@ main {
 }
 
 .badge.gold {
-    background-color: #fef9e7;
-    color: #b7950b;
-    border: 1px solid var(--accent-color);
+    background-color: #f7e1a0;
+    color: #5d4300;
+    border: 1px solid #b7950b;
 }
 
 .badge.silver {
-    background-color: #f2f4f4;
-    color: #7f8c8d;
-    border: 1px solid #bdc3c7;
+    background-color: #e2e4e6;
+    color: #424949;
+    border: 1px solid #7f8c8d;
 }
 
 .badge.member {
-    background-color: #eaf2f8;
-    color: #2980b9;
-    border: 1px solid #a9cce3;
+    background-color: #d4e6f1;
+    color: #1b4f72;
+    border: 1px solid #2980b9;
 }
 
 footer {
