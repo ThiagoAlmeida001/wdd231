@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 – Web Frontend Development I – Thiago da Silva Almeida</title>
+    <title>Santiago Chamber of Commerce - Home Page</title>
     <meta name="description"
-      content="WDD 231 – Web Frontend Development I | Thiago Almeida, This is my assignment homepage. I use it to practice my web development skills.">
+      content="Chamber of Commerce Home page for Santiago, Chile. WDD 231 assignment.">
     <meta name="author" content="Thiago da Silva Almeida">
-    <meta property="og:title" content="Thiago - Homepage">
-    <meta property="og:description" content="This is my assignment homepage. I use it to practice my web development skills.">
+    <meta property="og:title" content="Santiago Chamber of Commerce Home">
+    <meta property="og:description" content="Chamber of Commerce Home page for Santiago, Chile. WDD 231 assignment.">
+    <meta property="og:type" content="website">
     <meta property="og:image" content="https://thiagoalmeida001.github.io/wdd231/images/profile.jpg">
     <meta property="og:url" content="https://thiagoalmeida001.github.io/wdd231/">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
     <link rel="icon" href="images/favicon.ico">
 
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -41,7 +46,47 @@
         </nav>
     </header>
     <main>
+        <div class="hero-container">
+            <img src="images/herosantiago.webp" alt="Panoramic view of Santiago, Chile business district" width="1200" height="500">
+            <div class="hero-overlay">
+                <h1>Welcome to Santiago Chamber of Commerce</h1>
+                <p>Connecting local businesses, fostering growth, and building community.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </div>
 
+        <div class="home-grid">
+            <section class="events-card">
+                <h2>Current Events</h2>
+                <div class="event-item">
+                    <h3>Annual Santiago Business Summit</h3>
+                    <p><strong>Date:</strong> November 25, 2026 | 9:00 AM</p>
+                    <p><strong>Location:</strong> Centro Parque, Las Condes</p>
+                    <p>Join local entrepreneurs and industry leaders for a morning of networking and innovation workshops.</p>
+                </div>
+                <div class="event-item">
+                    <h3>Small Business Digital Marketing Workshop</h3>
+                    <p><strong>Date:</strong> December 4, 2026 | 3:00 PM</p>
+                    <p>Learn practical strategies to grow your online presence and reach more customers in Santiago.</p>
+                </div>
+            </section>
+            <section class="weather-card">
+                <h2>Current Weather - Santiago</h2>
+                <div class="current-weather">
+                    <img id="weather-icon" src="" alt="" width="50" height="50">
+                    <p><span id="current-temp"></span></p>
+                    <figcaption></figcaption>
+                </div>
+                <div id="forecast-container">
+                    <h3>3-Day Forecast</h3>
+                </div>
+            </section>
+        </div>    
+        <section class="spotlights-section">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container">
+            </div>
+        </section>
     </main>
     <footer>
         <div class="social-links">

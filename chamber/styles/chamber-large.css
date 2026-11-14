@@ -64,4 +64,42 @@
         flex: 1;
     }
 
+    .hero-overlay {
+        bottom: 30px;
+        left: 30px;
+        padding: 25px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #forecast-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        align-items: center;
+    }
+
+    #forecast-container h3 {
+        grid-column: 1 / -1; 
+    }
+
+    #forecast-container p {
+        border-bottom: none;
+        border-right: 1px solid #ddd;
+    }
+
+    #forecast-container p:last-child {
+        border-right: none;
+    }
+
 }
