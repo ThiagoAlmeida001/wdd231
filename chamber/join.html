@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 – Web Frontend Development I – Thiago da Silva Almeida</title>
+    <title>Santiago Chamber of Commerce - Join</title>
     <meta name="description"
-      content="WDD 231 – Web Frontend Development I | Thiago Almeida, This is my assignment homepage. I use it to practice my web development skills.">
+      content="Chamber of Commerce Join page for Santiago, Chile. WDD 231 assignment.">
     <meta name="author" content="Thiago da Silva Almeida">
-    <meta property="og:title" content="Thiago - Homepage">
-    <meta property="og:description" content="This is my assignment homepage. I use it to practice my web development skills.">
+    <meta property="og:title" content="Santiago Chamber of Commerce Join">
+    <meta property="og:description" content="Chamber of Commerce Join page for Santiago, Chile. WDD 231 assignment.">
+    <meta property="og:type" content="website">
     <meta property="og:image" content="https://thiagoalmeida001.github.io/wdd231/images/profile.jpg">
     <meta property="og:url" content="https://thiagoalmeida001.github.io/wdd231/">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
     <link rel="icon" href="images/favicon.ico">
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -33,15 +38,145 @@
         </div>
         <nav>
             <ul class="navigation" id="nav-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" >Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html" class="active">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="join-main">
+        <h1>Join the Santiago Chamber of Commerce</h1>
 
+        <div class="join-layout">
+            
+            <form action="thankyou.html" method="get" class="membership-form">
+                <h2>Membership Application</h2>
+                
+                <label>First Name: *
+                    <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+                
+                <label>Last Name: *
+                    <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+                
+                <label>Organizational Title:
+                    <input type="text" name="organizationalTitle" title="Minimum 7 characters; only letters, spaces, and hyphens allowed" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                </label>
+                
+                <label>Email: *
+                    <input type="email" name="email" title="Enter a valid email address" autocomplete="email" placeholder="email@address.com" required>
+                </label>
+                
+                <label>Mobile Phone Number: *
+                    <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                </label>
+                
+                <label>Business/Organization's Name: *
+                    <input type="text" name="organizationName" title="Enter your business or organization name" autocomplete="organization" required>
+                </label>
+                
+                <fieldset class="group">
+                    <legend>Select your membership level *</legend>
+                    
+                    <label class="radio-label">
+                        <input type="radio" name="membershipLevel" value="np" required> NP Membership (Non-Profit - Free)
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="membershipLevel" value="bronze" required> Bronze Membership
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="membershipLevel" value="silver" required> Silver Membership
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="membershipLevel" value="gold" required> Gold Membership
+                    </label>
+                    
+                </fieldset>
+                
+                <label>Business/Organization's Description:
+                    <textarea name="description" title="Describe your business or organization" rows="4"></textarea>
+                </label>
+                
+                <input type="hidden" id="timestamp" name="timestamp">
+                
+                <input type="submit" value="Apply for Membership" class="submit-btn">
+            </form>
+            
+            <section class="membership-cards">
+                <h2>Membership Levels</h2>
+                
+                <div class="level-card card-anim-1">
+                    <h3>Non-Profit Membership</h3>
+                    <p>For registered non-profit organizations.</p>
+                    <button type="button" class="info-btn" data-modal="modal-np">Learn More</button>
+                </div>
+                
+                <div class="level-card card-anim-2">
+                    <h3>Bronze Membership</h3>
+                    <p>Essential networking for small businesses.</p>
+                    <button type="button" class="info-btn" data-modal="modal-bronze">Learn More</button>
+                </div>
+                
+                <div class="level-card card-anim-3">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced visibility and event discounts.</p>
+                    <button type="button" class="info-btn" data-modal="modal-silver">Learn More</button>
+                </div>
+                
+                <div class="level-card card-anim-4">
+                    <h3>Gold Membership</h3>
+                    <p>Maximum exposure and VIP benefits.</p>
+                    <button type="button" class="info-btn" data-modal="modal-gold">Learn More</button>
+                </div>
+            </section>
+        </div>
+
+        <dialog id="modal-np">
+            <button class="close-modal" aria-label="close">❌</button>
+            <h3>NP Membership Benefits</h3>
+            <p><strong>Cost:</strong> Free ($0/year)</p>
+            <ul>
+                <li>Directory listing on the Chamber website</li>
+                <li>Access to monthly community networking meetings</li>
+                <li>Subscription to the Chamber newsletter</li>
+            </ul>
+        </dialog>
+
+        <dialog id="modal-bronze">
+            <button class="close-modal" aria-label="close">❌</button>
+            <h3>Bronze Membership Benefits</h3>
+            <p><strong>Cost:</strong> $150/year</p>
+            <ul>
+                <li>All NP Membership benefits</li>
+                <li>10% discount on Chamber training workshops</li>
+                <li>Ribbon-cutting ceremony announcement</li>
+            </ul>
+        </dialog>
+
+        <dialog id="modal-silver">
+            <button class="close-modal" aria-label="close">❌</button>
+            <h3>Silver Membership Benefits</h3>
+            <p><strong>Cost:</strong> $300/year</p>
+            <ul>
+                <li>All Bronze Membership benefits</li>
+                <li>Eligible for Home Page Spotlight rotation</li>
+                <li>25% discount on event sponsorship and booths</li>
+            </ul>
+        </dialog>
+
+        <dialog id="modal-gold">
+            <button class="close-modal" aria-label="close">❌</button>
+            <h3>Gold Membership Benefits</h3>
+            <p><strong>Cost:</strong> $500/year</p>
+            <ul>
+                <li>All Silver Membership benefits</li>
+                <li>Priority Home Page spotlight placement</li>
+                <li>Free VIP tickets to the Annual Business Summit</li>
+                <li>Featured article in our quarterly magazine</li>
+            </ul>
+        </dialog>
     </main>
     <footer>
         <div class="social-links">
