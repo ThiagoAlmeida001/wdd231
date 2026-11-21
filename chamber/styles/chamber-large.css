@@ -22,7 +22,7 @@
         flex-direction: row;
         position: static;
         width: auto;
-        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0);
         box-shadow: none;
         padding: 0;
         gap: 1.5rem;
@@ -37,13 +37,13 @@
 
     .navigation a:hover {
         background-color: var(--primary-color);
-        color: #ffffff;
+        color: var(--bg-color);
         text-decoration: none;
     }
 
     .navigation a.active {
         background-color: var(--primary-color);
-        color: #ffffff !important;
+        color: var(--bg-color);
         border-bottom: 3px solid var(--accent-color);
         border-radius: 4px 4px 0 0;
     }
