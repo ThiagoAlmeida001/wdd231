@@ -107,3 +107,22 @@
     }
 
 }
+
+@media (min-width: 1025px) {
+    #allplaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    #allplaces section {
+        margin: 0;
+        grid-template-columns: 1fr 220px;
+        grid-template-areas:
+            "name name"
+            "photograph description"
+            "photograph description"
+            "photograph location" 
+            "button button";
+    }
+}

@@ -1,0 +1,22 @@
+@media (min-width: 641px) {
+    
+    #allplaces section {
+        grid-template-columns: 300px 1fr;
+        grid-template-areas:
+            "name name"
+            "photograph description"
+            "photograph description"
+            "photograph location" 
+            "button button";
+        align-items: center;
+    }
+
+    #allplaces section figure img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    #allplaces section figure img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.08);
+    }
+}

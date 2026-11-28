@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 – Web Frontend Development I – Thiago da Silva Almeida</title>
+    <title>Santiago Chamber of Commerce - Discover</title>
     <meta name="description"
-      content="WDD 231 – Web Frontend Development I | Thiago Almeida, This is my assignment homepage. I use it to practice my web development skills.">
+      content="Chamber of Commerce Discover page for Santiago, Chile. WDD 231 assignment.">
     <meta name="author" content="Thiago da Silva Almeida">
-    <meta property="og:title" content="Thiago - Homepage">
-    <meta property="og:description" content="This is my assignment homepage. I use it to practice my web development skills.">
+    <meta property="og:title" content="Santiago Chamber of Commerce Discover">
+    <meta property="og:description" content="Chamber of Commerce Discover page for Santiago, Chile. WDD 231 assignment.">
+    <meta property="og:type" content="website">
     <meta property="og:image" content="https://thiagoalmeida001.github.io/wdd231/images/profile.jpg">
     <meta property="og:url" content="https://thiagoalmeida001.github.io/wdd231/">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-medium.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
     <link rel="icon" href="images/favicon.ico">
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+
+    <script type="module" src="scripts/discover.mjs"></script>
+    <script type="module" src="scripts/lastvisit.mjs"></script>
+
 </head>
 <body>
     <header>
@@ -41,6 +49,11 @@
         </nav>
     </header>
     <main>
+
+        <h1>Discover</h1>
+        <p id="last-visit"></p>
+
+        <div id="allplaces"></div>
 
     </main>
     <footer>
